@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="author" content="Clotilde Connault">
+    <meta name="description" content="Labo HTML et CSS">
+     <title>Citron</title>
+     <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+     <header id="essaiHeader">
+          <div id="contenant">
+               <div id="header" class="essai#Header">
+                    <img src="img/logo_citron.png" alt="petit citron" id="headerImg">
+                    <h1>Citron</h1>
+               </div>
+               <h4 id="essaiH4">Carnets de voyage</h4>
+          </div>
+               
+               <nav id="essaiNav">
+               <a href="index.html">accueil</a>
+               <a href="apropos.html">à propos</a>
+               <a href="contact.html">contact</a>
+               </nav>
+          
+     </header>
+
+     <div class="separateur"></div>
+     
+
+     <div class = "banniere">
+          <div class="banniereElement">
+               <p>Retour sur mes vacances ...</p>
+               <p id="test"></p>
+               <div id="boutonArticle">
+                    <a href="#" id="lienArticle">Voir l'article</a>
+                    <img src="../img/flecheblanchedroite.png" id="imgBoutonArticle">
+               </div>
+               
+          </div>
+     </div>
+
+     <section class="contenu">
+          <article>
+               <div id="titreArticle">
+                    <img src="img/ico_contact.png" alt="téléphone" id="imgEpingle">
+                    <h2>contact</h2>
+               </div>
+
+               <div id="googleMap" style="width:100%;height:400px;margin-bottom:10px;"></div>
+
+               <script>
+                    function myMap() {
+                    var mapProp= {
+                         center:new google.maps.LatLng(50.593713, 5.560215),
+                         zoom:5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+               </script>
+               <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAsk4CtAIYH3YR6dBuCBIj-E3KDiUeuQ&callback=myMap"></script>
+
+               <h2>pour toutes les questions</h2>
+               <form action="traitement.html">
+                    <p>
+                         <input type="text" name="prenom" value="" placeholder="Prénom" class="formElement" required>*
+                    </p>
+                    <p>
+                          <input type="text" name="nom" value="" placeholder="Nom" class="formElement" required>*
+                    </p>
+                    <p>
+                         <input type="text" name="mail" value="" placeholder="Mail" class="formElement" required>*
+                    </p>
+               
+                    <textarea rows="4" cols="50" maxlength="10" placeholder="Votre message" class="formElement"></textarea>
+                <p>
+                <input type="reset" value="Réinitialiser">
+                <input type="submit" value="Envoyer">
+                </p>
+
+               </form>
+               <p><span>*</span> Champs obligatoires</p>
+         
+          </article>
+
+          <aside>
+          <h2 class="asideElement">à propos de l'auteur</h2>
+          <img src="img/citron_mini.jpg" class="asideimg">
+          <h4 class="asideElement">Laisse-moi le temps de me présenter</h4>
+          <p class="asideElement">Je m'appelle Citron, je suis très bon en limonade</p>
+          <p class="asideElement">Tu ne me connais pas bien malgré ces explications, n'est-ce pas?
+          C'est pourquoi, aujourd'hui, j'ai décidé d'écrire ma biographie afin que tu saches qui je suis réellement.</p>
+          <div>
+               <a href="#"><img src="img/facebook.png" alt="logo facebook"></a>
+               <a href="#"><img src="img/twitter.png" alt="logo twitter"></a>
+               <a href="#"><img src="img/vimeo.png" alt="logo vimeo"></a>
+               <a href="#"><img src="img/flickr.png" alt="logo flickr"></a> 
+          </div>
+     </aside>
+     </section>
+
+     <div class="separateur"></div>
+
+     <footer>
+          <div class="footerElement">
+               <h3>mon dernier tweet</h3>
+               <p>Aujourd'hui c'est sans sucre !</p>
+               <p>le 7 août à 12h00</p>
+          </div>
+          <div class="footerElement">
+               <h3>mes photos</h3>
+               <img src="img/photo1.jpg" alt="citrons" class="footerImg">
+               <img src="img/photo2.jpg" alt="citrons" class="footerImg">
+               <img src="img/photo3.jpg" alt="citrons" class="footerImg">
+               <img src="img/photo4.jpg" alt="citrons" class="footerImg">
+          </div>
+
+          <div class="footerElement">
+               <h3>mes amis</h3>
+                    <div class="footer">
+                         <div>
+                    <ul>
+                    <li><a href="#">Pommes</a></li>
+                    <li><a href="#">Poires</a></li>
+                    <li><a href="#">Kiwis</a></li>
+                    <li><a href="#">Bananes</a></li>
+                    </ul>
+               </div>
+               <div>
+                    <ul>
+                    <li><a href="#">Oranges</a></li>
+                    <li><a href="#">Abricots</a></li>
+                    <li><a href="#">Figues</a></li>
+                    <li><a href="#">Ananas</a></li>
+                    </ul>
+               </div>
+
+                    </div>
+               
+          </div>
+</body>
+</html>
